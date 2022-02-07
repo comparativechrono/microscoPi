@@ -1,5 +1,5 @@
 # microscoPi
-Code associated with microscoPi project
+This repository contains useful code associated with various Raspberry Pi microscopy projects - collectively referred to as the "microscoPi" project
 
 # Why turn a Raspberry Pi into a microscope?
 
