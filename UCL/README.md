@@ -1,7 +1,8 @@
 # Getting a raspberry pi microscope to work
-## Access tokens and passwords removed
+#### Access tokens and passwords removed
 
-Hardware needed:
+##Hardware needed:
+
 Flash card with preinstalled NOOBS and reinstall Raspberry Pi OS
 2x energenie controllers and HAT
 Dropbox API app (legacy)
