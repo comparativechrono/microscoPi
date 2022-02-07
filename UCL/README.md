@@ -1,5 +1,5 @@
-** Getting a raspberry pi microscope to work **
-** Access tokens and passwords removed **
+# Getting a raspberry pi microscope to work
+## Access tokens and passwords removed
 
 Hardware needed:
 Flash card with preinstalled NOOBS and reinstall Raspberry Pi OS
@@ -50,12 +50,12 @@ sudo apt-get install python-pip python3-pip
 sudo pip install energenie
 sudo pip3 install energenie
 
-# python3 script for control LED =1, IR = 2 is called socketsON/OFF.py
+## python3 script for control LED =1, IR = 2 is called socketsON/OFF.py
 
 GPAC
 sudo apt-get install -y gpac
 sudo nano microimage.sh
-## this is the text to enter in the bash script
+### this is the text to enter in the bash script
 #!/bin/bash
 DATE=$(date +"%Y-%m-%d_%H%M")
 raspivid -o /home/pi/CircaMicroPi/Cam1/$DATE.h264 -t 60000
@@ -80,7 +80,9 @@ raspivid -t 0
 Set up a scheduler
 Set up crontab to run first time:
 sudo crontab –e
-# every 3 hours: at 00:30 turn sockets off and IR light on, at 00:31 take video, at 00:33 turn sockets on and IR light off, at 00:45 synch to dropbox 
+
+## every 3 hours: at 00:30 turn sockets off and IR light on, at 00:31 take video, at 00:33 turn sockets on and IR light off, at 00:45 synch to dropbox 
+
 30 */3 * * * python /home/pi/socketsOFF.py
 31 */3 * * * sh /home/pi/microimage.sh
 33 */3 * * * python /home/pi/socketsON.py
