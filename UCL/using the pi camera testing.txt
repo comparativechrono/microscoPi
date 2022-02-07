@@ -1,0 +1,16 @@
+yuv## pi module commands:
+
+raspivid
+raspividyuv
+
+# 10 seconds default
+raspivid -o /home/pi/CircaMicroPi/Cam1/raspivid.h264 -t 10000
+
+# 10 seconds encoding to mjpeg
+raspivid -o /home/pi/CircaMicroPi/Cam1/raspivid.mjpeg -cd MJPEG -t 10000
+
+#10 seconds raw saved to rgb
+raspividyuv -o /home/pi/CircaMicroPi/Cam1/raspividyuv.rgb -rgb -t 10000
+
+#10 seconds raw saved yuv
+raspividyuv -o /home/pi/CircaMicroPi/Cam1/raspivid.yuv -t 10000

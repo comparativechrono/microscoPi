@@ -1,0 +1,16 @@
+# every 3 hours at 00:30
+# turn sockets off and IR light on
+30 */3 * * * python /home/pi/socketsOFF.py
+
+# every 3 hours at 00:31
+# take video
+31 */3 * * * sh /home/pi/microimage.sh
+
+# every 3 hours at 00:33
+# turn sockets on and IR light off
+33 */3 * * * python /home/pi/socketsON.py
+
+# synch to dropbox
+# every 3 hours at 00:45
+45 */3 * * * python /home/pi/dropboxupload.py
+
