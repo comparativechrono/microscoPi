@@ -1,6 +1,8 @@
 # microscoPi
+
 | This repository contains useful code associated with various Raspberry Pi microscopy projects - collectively referred to as the "microscoPi" project.  | ![MicroscoPI](https://raw.githubusercontent.com/comparativechrono/microscoPi/main/images/microscoPI%20v3.png) |
-|---------------------------|-----------------------------------------------|
+|                           |                                             |
+
 
 
 # Why turn a Raspberry Pi into a microscope?
