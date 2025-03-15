@@ -1,5 +1,5 @@
 # microscoPi
-<img src="https://raw.githubusercontent.com/comparativechrono/microscoPi/main/images/microscoPI%20v3.png" width="200" style="float: right; margin-left: 10px;">
+<img src="https://raw.githubusercontent.com/comparativechrono/microscoPi/main/images/microscoPI%20v3.png" width="200" style="float: left; margin-right: 10px;">
 
 This repository contains useful code associated with various Raspberry Pi microscopy projects - collectively referred to as the "microscoPi" project
 
