@@ -30,15 +30,16 @@ This directory contains all the code needed to automate an infra red microscope.
 `sudo nano/etc/wpa_supplicant/wpa_supplicant.conf`
 
 enter this into nano:
-            network={
-            ssid="eduroam"
-            scan_ssid=1
-            key_mgmt=WPA-EAP
-            eap=PEAP
-            identity="tjh70@cam.ac.uk"
-            password=" " phase1="peaplabel=0"
-            phase2="auth=MSCHAPV2"
-            }
+
+                        network={
+                        ssid="eduroam"
+                        scan_ssid=1
+                        key_mgmt=WPA-EAP
+                        eap=PEAP
+                        identity="tjh70@cam.ac.uk"
+                        password=" " phase1="peaplabel=0"
+                        phase2="auth=MSCHAPV2"
+                        }
       
 ctrl x to save
 
