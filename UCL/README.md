@@ -108,10 +108,11 @@ transfer and put dropboxupload.py in home directory
 Set this up to run using crontab. To set up crontab to run first time:
 
 `sudo crontab –e`
-30 */3 * * * python /home/pi/socketsOFF.py
-31 */3 * * * sh /home/pi/microimage.sh
-33 */3 * * * python /home/pi/socketsON.py
-45 */3 * * * python /home/pi/dropboxupload.py
+
+                  30 */3 * * * python /home/pi/socketsOFF.py
+                  31 */3 * * * sh /home/pi/microimage.sh
+                  33 */3 * * * python /home/pi/socketsON.py
+                  45 */3 * * * python /home/pi/dropboxupload.py
 
 Once done, exit and save (ctrl x and press y and enter to save).
 
