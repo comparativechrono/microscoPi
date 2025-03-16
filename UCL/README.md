@@ -69,8 +69,11 @@ python3 script for control LED =1, IR = 2 is called socketsON/OFF.py
 
 ### GPAC
 `sudo apt-get install -y gpac`
+
 `sudo nano microimage.sh`
+
 this is the text to enter in the bash script
+
         #!/bin/bash
         DATE=$(date +"%Y-%m-%d_%H%M")
         raspivid -o /home/pi/CircaMicroPi/Cam1/$DATE.h264 -t 60000
@@ -78,11 +81,17 @@ this is the text to enter in the bash script
 
 ### Dropbox Commandline to set up:
 `sudo apt update`
+
 `sudo apt upgrade`
+
 `sudo apt install curl git`
+
 `git clone https://github.com/andreafabrizi/Dropbox-Uploader.git`
+
 `cd ~/Dropbox-Uploader/`
+
 `sudo chmod +x dropbox_uploader.sh`
+
 `./dropbox_uploader.sh`
 
 *access token for dropbox – generate from the legacy API – this is for CircaMircoPi*
@@ -94,9 +103,10 @@ transfer and put dropboxupload.py in home directory
    Plug in everything, position over sample and focus using the following
 `raspivid -t 0`
 
-2. Set up a scheduler
+3. Set up a scheduler
    For a simple experiment imaging every 3 hours: at 00:30 turn sockets off and IR light on, at 00:31 take video, at 00:33 turn sockets on and IR light off, at 00:45 synch to dropbox.
 Set this up to run using crontab. To set up crontab to run first time:
+
 `sudo crontab –e`
 30 */3 * * * python /home/pi/socketsOFF.py
 31 */3 * * * sh /home/pi/microimage.sh
