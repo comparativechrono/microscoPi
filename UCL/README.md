@@ -26,7 +26,9 @@ This directory contains all the code needed to automate an infra red microscope.
 ## Packages needed and install:
 **install eduroam first (delete the wlan0 I var/run/wpa_supplicant first)**
 ### Eduroam
+
 `sudo nano/etc/wpa_supplicant/wpa_supplicant.conf`
+
 enter this into nano:
       network={
       ssid="eduroam"
@@ -37,21 +39,30 @@ enter this into nano:
       password=" " phase1="peaplabel=0"
       phase2="auth=MSCHAPV2"
       }
+      
 ctrl x to save
+
 `sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf`
 
 ### GPIO and energenie
 `sudo apt-get install python-rpi.gpio`
+
 `wget https://bitbucket.org/MattHawkinsUK/rpispy-pool-monitor/raw/master/utils/energenie_pair.py`
 
 hold down button to flash (label these with tape)
+
 `python3 energenie_pair.py 1`
+
 hold down button to flash second (label these with tape)
+
 `python3 energenie_pair.py 2`
 
 install energenie control packages
+
 `sudo apt-get install python-pip python3-pip`
+
 `sudo pip install energenie`
+
 `sudo pip3 install energenie`
 
 python3 script for control LED =1, IR = 2 is called socketsON/OFF.py
