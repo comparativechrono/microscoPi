@@ -1,5 +1,6 @@
 # Getting a raspberry pi microscope to work
 *Access tokens and passwords removed*
+
 This directory contains all the code needed to automate an infra red microscope. 
 
 ## Hardware needed:
@@ -19,6 +20,7 @@ This directory contains all the code needed to automate an infra red microscope.
 - socketsON.py -> in home directory
 - socketsOFF.py -> in home directory
 - microimage.sh -> in home directory
+
 *Note that none of these do analysis - you will need to use one of the other scripts in the MicroscoPI directory to do the analysis*
 
 ## Packages needed and install:
