@@ -1,11 +1,16 @@
 # microscoPi
 
-<div style="overflow: hidden;">
-  <img src="https://raw.githubusercontent.com/comparativechrono/microscoPi/main/images/microscoPI%20v3.png" alt="MicroscoPI" width="200" style="float: left; margin-right: 20px;" />
-  <div>
-    This repository contains useful code associated with various Raspberry Pi microscopy projects — collectively referred to as the <strong>"microscoPi"</strong> project.
-  </div>
-</div>
+<table>
+  <tr>
+    <td style="vertical-align: top; border: none;">
+      <img src="https://raw.githubusercontent.com/comparativechrono/microscoPi/main/images/microscoPI%20v3.png" alt="MicroscoPI" width="200" />
+    </td>
+    <td style="vertical-align: top; border: none; padding-left: 20px;">
+      This repository contains useful code associated with various Raspberry Pi microscopy projects — collectively referred to as the <strong>"microscoPi"</strong> project.
+    </td>
+  </tr>
+</table>
+
 
 
 
