@@ -6,40 +6,63 @@
       <img src="https://raw.githubusercontent.com/comparativechrono/microscoPi/main/images/microscoPI%20v3.png" alt="MicroscoPI" width="200" />
     </td>
     <td style="vertical-align: top; border: none; padding-left: 20px;">
-      This repository contains useful code associated with various Raspberry Pi microscopy projects — collectively referred to as the <strong>"microscoPi"</strong> project.
+      This repository contains code and documentation for various Raspberry Pi-based microscopy projects — collectively referred to as <strong>"microscoPi"</strong>.
     </td>
   </tr>
 </table>
 
+---
 
+## 🧠 Why turn a Raspberry Pi into a microscope?
 
+Creating automated imaging systems for circadian analysis has been a long-standing passion of mine. The motivation is simple: traditional imaging systems are often prohibitively expensive and can't be deployed in realistic biological environments — for example, inside a growth cabinet or under dynamic environmental conditions.
 
+Alex Webb introduced me to the world of Raspberry Pi, and since then, I've tried to integrate Pi-based solutions wherever possible.
 
+This repository contains code we've used in various projects over the years. One major takeaway from this work has been to prioritise **biological measurement** over engineering elegance. Many of these imaging systems were built with urgency — prioritising function over form. As a result, most tools are simple Python or Unix command-line scripts. No fancy GUI — just what works.
 
-# Why turn a Raspberry Pi into a microscope?
+The first *microscoPi* was used in the time-course imaging setup described in [Fong et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33689719/), at the UCL fish facility. It was basic, but it got the job done.
 
-Making automated imaging systems for circadian analysis is something I have been passionate about for a while now. The motivation for this is simple - imaging solutions are often expensive, and cannot be deployed in situations of physiological relevance e.g. inside a growth cabinet or with changing environmental conditions.
+---
 
-Alex Webb introduced me to the wonderful world of Raspberry Pi's, and since then I have attempted to include Pi solutions wherever possible. 
+## 🧪 Analysing Images
 
-This repo includes some of the code that we have used on various projects over the years. One of the take home messages from doing this kind of work has been to focus on the actual biological measurements, rather than an elegant solution. Often these imaging approaches have been taken with a need to gather data quickly - therefore simple unix or python solutions run off the command line are easier and more versatile than building a beautiful GUI.
+Capturing time courses of cells or tissues — even in low-light with a Pi NoIR — is straightforward. What’s more challenging is analyzing structural changes under varying lighting conditions.
 
-The first microsoPi was used for the time course imaging in Fong et al., 2021 (https://pubmed.ncbi.nlm.nih.gov/33689719/), at the UCL fish facility. This was a very simple approach, but it got the job done.
+Sure, one could write a clever script to normalize pixel intensity...  
+**Or** you could just turn the lights off when imaging.
 
-# Analysing images
+That’s my preferred solution — simple and reproducible. As a result, most image analysis can be done with standard python image libraries on the Pi itself. Image quality may not be publication-grade microscopy, but the data is usable, and that’s the real goal.
 
-Collecting timecourses of cells or tissues is relatively easy, even in the dark with a Pi NoIR. What is more challenging is analysing the size of different strucutres under changing lighting conditions. One could write a very clever script to normalise pixel intensity, or one could simply always turn the lights off when imaging! This is my solution, and therefore analysing images can be done using standard image J plugins. It does mean the image quality is relatively low, but I see that as a trade off that is more easily worked around.
+---
 
-# What's in this repository?
+## 📁 What's in this repository?
 
-In this repository you will find the following directories:
-*    analysis - a directory containing analysis notebooks and scripts used to analyse videos or images.
-*    statistics - a directory containing notebooks useed to run satistical analysis on data extracted from videos or images.
-*    Cam - a directory containing instructions for how to build the automated microscope used in Alex Webb's lab in the Department of Plant Sciences at the University of Cambridge.
-*    UCL - a directory containing instructions for how to build the automated heart imaging system used in David Whitmore's lab at UCL, and following this in the Hearn lab in the Department of Genomic Medicine at the University of Cambridge.
-*    Papers - material used for specific papers that have cited this repository.
+Here’s a quick breakdown of what you’ll find:
 
-Everything else is either material supporting this repo build, or working material dumped in the sandbox.
+- **`analysis/`** – Notebooks and scripts for analysing videos or time-lapse images.  
+- **`statistics/`** – Notebooks for running statistical analyses on extracted data.  
+- **`Cam/`** – Instructions for building the automated microscope used in Alex Webb's lab (Department of Plant Sciences, University of Cambridge).  
+- **`UCL/`** – Instructions for building the automated heart imaging system used in David Whitmore's lab (UCL) and later in the Hearn lab (Department of Genomic Medicine, University of Cambridge).  
+- **`Papers/`** – Project-specific materials for papers citing this repository.
 
-# License
-This project is open-source and available under the MIT License.
+Everything else is either support material or sandbox content still in progress.
+
+---
+
+## 🚀 Getting Started
+
+If you're looking to build your own microscoPi setup or run any of the analysis code, then feel free to clone this repository. I suggest beginners follow the step-by-step instructions in the UCL directory.
+
+---
+
+## 📄 Citation
+
+If you use this code or concept in your research, feel free to cite the associated paper:  
+[Fong et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33689719/)
+
+---
+## 📜 License
+
+This project is open source and available under the **MIT License**.
+
