@@ -1,7 +1,13 @@
 # microscoPi
 
-| This repository contains useful code associated with various Raspberry Pi microscopy projects - collectively referred to as the "microscoPi" project.  | ![MicroscoPI](https://raw.githubusercontent.com/comparativechrono/microscoPi/main/images/microscoPI%20v3.png) |
-|---------------------------|-----------------------------------------------|
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div style="flex: 1; padding-right: 20px;">
+    This repository contains useful code associated with various Raspberry Pi microscopy projects — collectively referred to as the <strong>"microscoPi"</strong> project.
+  </div>
+  <div>
+    <img src="https://raw.githubusercontent.com/comparativechrono/microscoPi/main/images/microscoPI%20v3.png" alt="MicroscoPI" width="200">
+  </div>
+</div>
 
 
 # Why turn a Raspberry Pi into a microscope?
